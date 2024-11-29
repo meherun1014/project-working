@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal protfolio</title>
+   
+</head>
+<style>
+    table,tr,th,td, caption {
+        border: 1px solid black;
+        font-family: 'Courier New', Courier, monospace;
+        border-collapse: collapse;
+        padding: 0.5rem;
+    }
+    #Portfolio{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+
+    <header>
+
+          <h1>My protfolio wiht just HTML</h1>
+
+          <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <hr>
+    <main>
+             <!-- first section about  -->
+
+        <section id="about">
+
+            <h2>Hi,I am jimi.I am learning coding.I like cat. Now i am creating a Cat protfolio with HTML </h2>
+             
+           
+            <figure>
+                <img src="images/0-cat-illustrator-portfolio-infographics___media_library_original_1600_900.webp" alt="images" title="cat protfolio" width="500" >
+                <figcaption>
+                    <p>
+                        This is just a cat Protfolio picture.
+                    </p>
+                </figcaption>
+            </figure>
+
+                 <!-- table element -->
+         <div>
+            <h2>MY Cat sechedule Table</h2>
+            <table>
+                <caption>Cat Food Schedule Table</caption>
+
+            <thead>
+              
+            <tbody>
+                <tr> 
+                
+                    <th scope="col">Time</th>
+                    <th scope="col">shedule</th>
+                    <th>activities</th>
+                </tr>
+            </thead>
+            <tr>
+                <th scope="row">morning</th>
+                <td>
+                   <time datetime="8am">8am</time>- <time datetime="11am">11am</time>
+
+                </td>
+                <td>morning Activities and food</td>
+            </tr>
+
+            <tr>
+                <th>
+                    afternoon
+                </th>
+                <td>
+                    <time datetime="12pm"> 12am</time> - <time datetime="2pm">2pm</time>
+                </td>
+                <td>lunch</td>
+            </tr>
+
+            <tr>
+                <th> evening</th>
+                <td><time datetime="3pm">3pm</time> - <time datetime="5pm">5pm</time></td>
+                <td> Evening activities</td>
+            </tr>
+
+            <tr>
+                <th scope="row">night</th>
+                <td rowspan="2"> free</td>
+                <td>sleep</td>
+            </tr>
+            <tr>
+                <th scope="row"> other</th>
+                <td>nothing</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And that's all my cat doing everyday</td>
+                </tr>
+            </tfoot>
+
+            </table>
+        
+         </div>
+          
+         <br>
+         <br>
+
+             <!-- some question and answer -->
+
+             <div>
+                <aside>
+                    <details>
+                        <summary>What's food i give my cat?</summary>
+
+                        <p>I give my him canfood</p>
+
+                        
+                    </details>
+                  <details>
+                    <summary>Dose your cat bite?</summary>
+                    <p>No</p>
+                  </details>
+                </aside>
+             </div>
+
+             <p>
+                <a href="#">go to top</a>
+             </p>
+
+               <hr>
+        </section>
+         
+                                        <!-- 1st Section end -->
+
+
+        <!-- Portfolio Section Start -->
+
+        <section id="Portfolio">
+
+            <h2>Here is my Cat Portfolio</h2>
+            <div>
+                <ol>
+                    <li>My prince</li>
+                    <li>My kitty</li>
+                    <li>My cutie</li>
+                    <li>My blacky</li>
+                </ol>
+            </div>
+                         <!-- cat picture add with description list -->
+                       
+       <div>
+        <dl>
+            <dt>
+             <figure>
+                 <img src="images/pexels-photo-1314550.jpeg" alt="cat" title="prince" width="400" height="500">
+                 <figcaption>
+                     My cat Prince
+                 </figcaption>
+             </figure>
+            </dt>
+            <dd>
+             <figure>
+                 <img src="images/kitty-cat-kitten-pet-45201.jpeg" alt="ketty" title="my kitty" width="400" height="280">
+                 <figcaption>
+                     my kitty
+                 </figcaption>
+             </figure>
+         </dd>
+
+
+         <dt>
+             <figure>
+                 <img src="images/istockphoto-1293763250-612x612.jpg" alt="cuty" title="cuty" width="400">
+                 <figcaption>
+                     my cutie
+                 </figcaption>
+             </figure>
+         </dt>
+            
+     
+         <dd>
+             <figure>
+                 <img src="images/istockphoto-1361394182-612x612.jpg" alt="blacky" title="blacky" width="400">
+                  
+                 <figcaption>
+                     my blacky
+                 </figcaption>
+             </figure>
+         </dd>
+        </dl>
+       </div>
+
+                   <!-- selecting cat with radio element -->
+             <div>
+
+                <h3>Choose the One option</h3>
+                <fieldset>
+                    <legend>Which cat do you like? </legend>
+
+                  <p>
+                    <input type="radio" name="cat" id="prince" value="prince">
+                    <label for="prince">Prince</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="cat" id="kitty" value="kitty">
+                    <label for="kitty">kitty</label>
+                  </p>
+                  <p>
+                    <input type="radio" id="cutie" name="cat" value="cutie">
+                    <label for="cutie">cutie</label>
+                  </p>
+                  <p>
+                    <input type="radio" id="blacky" name="cat" value="blacky">
+                    <label for="blacky">blacky</label>
+                  </p>
+                    
+                </fieldset>
+             </div>
+             <br><br>
+             
+                              <!-- seleting cat food div -->
+
+              <div>
+
+                <h2>Please choose the best food for Cat.</h2>
+
+                <label for="food">Favourite food:</label>
+                <select name="food" id="food" multiple size="6">
+                  <optgroup label="Dry Food">
+                    <option value="Royal Canin">Royal canin</option>
+                    <option value="Hill's Scinence Diet">Hill's Science Diet</option>
+                    <option value="Purina pro Plan">Purina pro Plan</option>
+                    <option value="Orijen">Orijen</option>
+                  </optgroup>
+
+                  <optgroup label="Wet Food">
+                    <option value="Fancy Feast">Fancy Feast</option>
+                    <option value="Wellness Core">Wellness Core</option>
+                    <option value="Sheba">Sheba</option>
+                    <option value="Friskies" selected>Friskeis</option>
+
+                  </optgroup>
+
+                  <optgroup label="Freese Dried or Raw">
+                    <option value="Sella & Chewy's">Stella & Chewy's</option>
+                    <option value="Instinct Raw Boost">Instinct Raw Boost</option>
+                    <option value="Primal pet Foods">Primal Pet Foods</option>
+
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- rhytem with description list -->
+
+
+              <div>
+
+                <h2>Rhythm </h2>
+                <dl>
+                    <dt>🎵 Tip-toe, tail swing, whisker twitch, play
+                    </dt>
+                    <dd>🎵 Stretch-stretch, yawn-yawn, sunny spot, stay
+                    </dd>
+
+
+                    <dt>🎵 Chirp-chirp, pounce-pounce, zoom around, sway
+                    </dt>
+                    <dd>🎵 Curl up tight, dream of mice, snooze the day away!</dd>
+                </dl>
+              </div>
+
+              <a href="#">go to top</a>
+        </section>
+
+
+               <!-- Third section contact-->
+        
+        <section id="Contact">
+            <h2>
+                Contact Me
+            </h2>
+
+            <fieldset>
+              
+                <legend>Contact Information</legend>
+
+            <div>
+                <p>
+                    <label for="FirstName">FirstName:</label>
+                    <input type="text" name="FirstName" id="FirstName" placeholder="Your Name" autocomplete="on" required>
+                    
+                </p>
+                <p>
+                    <label for="password">password:</label>
+                    <input type="password" name="password" id="password" placeholder="your secret" autocomplete="on" required>
+
+                </p>
+                <p>
+                    <label for="phone">phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+880"  required>
+
+                </p>
+                <p>
+                    <label for="Decade">Decade:</label>
+                    <input type="number" name="Decade" id="Decade" min="2000" max="2024" step="1" value="2001">
+
+                </p>
+                <p>
+                    <label for="Email">Email:</label><br>
+                    <textarea name="Email" id="email" rows="5" cols="30" placeholder="send me email"></textarea>
+                </p>
+            </div>
+            </fieldset>
+
+
+
+        </section>
+          <a href="#"> go to top</a>
+    </main>
+    <hr>
+    <footer>
+        <p>&lt;&lt;&lt; &copy Meherunnesa Jmi &gt;&gt;&gt;</p>
+    </footer>
+    
+</body>
+</html>
